@@ -26,7 +26,7 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /path/to/your/app # EC2 인스턴스 내 프로젝트 경로로 진입
+            cd /home/ec2-user/ci-cd-example # EC2 인스턴스 내 프로젝트 경로로 진입
             git pull origin master # 코드 최신화
             npm install
             npm run build
