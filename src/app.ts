@@ -10,6 +10,6 @@ app.get("/", (_: Request, res: Response) => {
 });
 
 // 서버 시작
-app.listen(3000, () => {
-  console.log(`서버가 http://localhost:3000 에서 실행 중입니다`);
+app.listen(3001, () => {
+  console.log(`서버가 http://localhost:3001 에서 실행 중입니다`);
 });
